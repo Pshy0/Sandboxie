@@ -647,7 +647,7 @@ void CMessageDialog::OnHelp()
     CString Detail;
     CString sbie = GetSBIExxxx(NULL, &Detail);
     if (!sbie.IsEmpty()) {
-        CString url = L"https://sandboxie-plus.com/go.php?to=sbie-" + sbie + "&detail=" + CRunBrowser::EscapeForURL(Detail);
+        CString url = L"https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-" + sbie + "&detail=" + CRunBrowser::EscapeForURL(Detail);
         CRunBrowser x(this, url);
         //CRunBrowser::OpenHelp(this, sbie);
     }

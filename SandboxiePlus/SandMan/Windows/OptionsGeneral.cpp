@@ -27,7 +27,7 @@ protected:
 	void mousePressEvent(QMouseEvent* event)
 	{
 		if(!g_CertInfo.active)
-			theGUI->OpenUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-get-cert"));
+			theGUI->OpenUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert"));
 	}
 };
 

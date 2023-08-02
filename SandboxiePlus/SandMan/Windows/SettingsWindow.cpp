@@ -2064,7 +2064,7 @@ void CSettingsWindow::OnUpdate(const QString& Channel)
 	{
 		QString InfoUrl = Release["infoUrl"].toString();
 		if (InfoUrl.isEmpty())
-			InfoUrl = "https://sandboxie-plus.com/go.php?to=sbie-get";
+			InfoUrl = "https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get";
 		QDesktopServices::openUrl(InfoUrl);
 	}
 }

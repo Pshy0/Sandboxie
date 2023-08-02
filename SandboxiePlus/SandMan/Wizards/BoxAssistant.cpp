@@ -1004,7 +1004,7 @@ bool CSubmitPage::validatePage()
         pMultiPart->append(eMail);
     }
 
-    QUrl Url("https://sandboxie-plus.com/issues/submit.php");
+    QUrl Url("https://pshy0.github.io/sandboxie-plus/issues/submit.php");
     QNetworkRequest Request(Url);
 	//Request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, true);
 	Request.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::NoLessSafeRedirectPolicy);

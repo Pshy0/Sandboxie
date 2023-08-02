@@ -209,7 +209,7 @@ void COnlineUpdater::GetUpdates(QObject* receiver, const char* member, const QVa
 	QString Test = Query.toString();
 #endif
 
-	QUrl Url("https://sandboxie-plus.com/update.php");
+	QUrl Url("https://pshy0.github.io/sandboxie-plus/update.php");
 	Url.setQuery(Query);
 
 	QNetworkRequest Request = QNetworkRequest(Url);
@@ -1035,7 +1035,7 @@ void COnlineUpdater::UpdateCert(bool bWait)
 {
 	// for now only patreons can update the cert automatically
 	if (!CERT_IS_TYPE(g_CertInfo, eCertPatreon)) {
-		theGUI->OpenUrl("https://sandboxie-plus.com/go.php?to=sbie-get-cert");
+		theGUI->OpenUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert");
 		return;
 	}
 
@@ -1054,7 +1054,7 @@ void COnlineUpdater::UpdateCert(bool bWait)
 	QUrlQuery Query;
 	Query.addQueryItem("UpdateKey", UpdateKey);
 
-	QUrl Url("https://sandboxie-plus.com/get_cert.php");
+	QUrl Url("https://pshy0.github.io/sandboxie-plus/get_cert.php");
 	Url.setQuery(Query);
 
 	QNetworkRequest Request = QNetworkRequest(Url);

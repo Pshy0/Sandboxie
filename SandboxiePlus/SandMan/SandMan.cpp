@@ -2459,7 +2459,7 @@ QString CSandMan::FormatSbieMessage(quint32 MsgCode, const QStringList& MsgData,
 
 QString CSandMan::MakeSbieMsgLink(quint32 MsgCode, const QStringList& MsgData, QString ProcessName)
 {
-	QUrl Url("https://sandboxie-plus.com/go.php");
+	QUrl Url("https://pshy0.github.io/sandboxie-plus/go.php");
 	QUrlQuery Query;
 	Query.addQueryItem("to", "sbie-sbie" + QString::number(MsgCode & 0xFFFF));
 	for (int i = 1; i < MsgData.size(); i++)
@@ -2507,7 +2507,7 @@ void CSandMan::OnLogSbieMessage(quint32 MsgCode, const QStringList& MsgData, qui
 			msgBox.exec();
 			/*msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
 			if (msgBox.exec() == QDialogButtonBox::Yes) {
-				OpenUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-get-cert"));
+				OpenUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert"));
 			}*/
 			
 			//bCertWarning = false;
@@ -2569,7 +2569,7 @@ bool CSandMan::CheckCertificate(QWidget* pWidget)
 	msgBox.exec();
 	/*msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
 	if (msgBox.exec() == QDialogButtonBox::Yes) {
-		OpenUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-get-cert"));
+		OpenUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert"));
 	}*/
 
 	return false;
@@ -3550,7 +3550,7 @@ void CSandMan::OpenUrl(const QUrl& url)
 		else if (path == "/cert")
 			m_pUpdater->UpdateCert();
 		else
-			OpenUrl("https://sandboxie-plus.com/sandboxie" + path);
+			OpenUrl("https://pshy0.github.io/sandboxie-plus/sandboxie" + path);
 		return;
 	}
 
@@ -3752,16 +3752,16 @@ void CSandMan::LoadLanguage(const QString& Lang, const QString& Module, int Inde
 void CSandMan::OnHelp()
 {
 	//if (sender() == m_pSupport)
-	//	QDesktopServices::openUrl(QUrl("https://sandboxie-plus.com/go.php?to=donate"));
+	//	QDesktopServices::openUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=donate"));
 	//else 
 	if (sender() == m_pContribution)
-		QDesktopServices::openUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-contribute"));
+		QDesktopServices::openUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-contribute"));
 	else if (sender() == m_pManual)
-		QDesktopServices::openUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-docs"));
+		QDesktopServices::openUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-docs"));
 	else if (sender() == m_pForum)
-		QDesktopServices::openUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-forum"));
+		QDesktopServices::openUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-forum"));
 	else
-		QDesktopServices::openUrl(QUrl("https://sandboxie-plus.com/go.php?to=patreon"));
+		QDesktopServices::openUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=patreon"));
 }
 
 void CSandMan::OnAbout()

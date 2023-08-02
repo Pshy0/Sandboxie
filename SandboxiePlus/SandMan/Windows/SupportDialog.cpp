@@ -331,7 +331,7 @@ void CSupportDialog::OnButton()
 		});
 	}
 	else if (Action == 2) 
-		return theGUI->OpenUrl(QUrl("https://sandboxie-plus.com/go.php?to=sbie-get-cert"));
+		return theGUI->OpenUrl(QUrl("https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert"));
 	else if (Action == 1)
 		accept();
 	else

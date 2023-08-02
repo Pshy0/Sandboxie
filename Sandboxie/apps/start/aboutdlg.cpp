@@ -255,7 +255,7 @@ INT_PTR AboutDialogProc(
             if (Actions == 1)
                 EndDialog(hwnd, IDOK);
             else if (Actions == 2)
-                ShellExecute(NULL , NULL, L"https://sandboxie-plus.com/go.php?to=sbie-get-cert", NULL, NULL, SW_SHOWNORMAL);
+                ShellExecute(NULL , NULL, L"https://pshy0.github.io/sandboxie-plus/go.php?to=sbie-get-cert", NULL, NULL, SW_SHOWNORMAL);
             else
                 EndDialog(hwnd, IDCANCEL);
 
