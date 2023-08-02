@@ -2135,7 +2135,7 @@ void CSandMan::OnStatusChanged()
 		if (!theAPI->ReloadCert().IsError())
 			CSettingsWindow::LoadCertificate();
 		else {
-			g_Certificate.clear();
+			//g_Certificate.clear();
 
 			QString CertPath = QCoreApplication::applicationDirPath() + "\\Certificate.dat";
 			if(QFile::exists(CertPath)) // always delete invalid certificates

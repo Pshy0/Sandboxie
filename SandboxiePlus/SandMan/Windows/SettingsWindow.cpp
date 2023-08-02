@@ -1500,7 +1500,7 @@ bool CSettingsWindow::ApplyCertificate(const QByteArray &Certificate, QWidget* w
 		QMessageBox::critical(widget, "Sandboxie-Plus", tr("This support certificate is not valid."));
 
 		g_CertInfo.State = 0;
-		g_Certificate.clear();
+		//g_Certificate.clear();
 		return false;
 	}
 }
