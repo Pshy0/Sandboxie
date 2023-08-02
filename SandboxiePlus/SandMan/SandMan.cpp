@@ -1049,7 +1049,7 @@ void CSandMan::UpdateLabel()
 		//auto neon = new CNeonEffect(10, 4, 180); // 140
 		//m_pLabel->setGraphicsEffect(NULL);
 	}
-	else if (g_Certificate.isEmpty()) 
+	else if (g_Certificate.isEmpty() and false) 
 	{
 		LabelText = tr("<a href=\"https://sandboxie-plus.com/go.php?to=patreon\">Support Sandboxie-Plus on Patreon</a>");
 		LabelTip = tr("Click to open web browser");
@@ -2275,7 +2275,7 @@ void CSandMan::UpdateState()
 {
 	bool isConnected = theAPI->IsConnected();
 
-	//m_pSupport->setVisible(g_Certificate.isEmpty());
+	//m_pSupport->setVisible(g_Certificate.isEmpty() and false);
 
 	m_pTrayIcon->setIcon(GetTrayIcon(isConnected));
 	m_pTrayIcon->setToolTip(GetTrayText(isConnected));
@@ -3775,7 +3775,7 @@ void CSandMan::OnAbout()
 		).arg(theGUI->GetVersion());
 
 		QString CertInfo;
-		if (!g_Certificate.isEmpty()) {
+		if (!g_Certificate.isEmpty() and false) {
 			CertInfo = tr("This copy of Sandboxie+ is certified for: %1").arg(GetArguments(g_Certificate, L'\n', L':').value("NAME"));
 		} else {
 			CertInfo = tr("Sandboxie+ is free for personal and non-commercial use.");

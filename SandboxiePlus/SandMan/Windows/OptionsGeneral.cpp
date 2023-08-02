@@ -81,7 +81,7 @@ void COptionsWindow::CreateGeneral()
 		}
 	}
 
-	if (g_Certificate.isEmpty()) {
+	if (g_Certificate.isEmpty() and false) {
 		QWidget* ExWidgets[] = { ui.chkSecurityMode, ui.chkLockDown, ui.chkRestrictDevices,
 			ui.chkPrivacy, ui.chkUseSpecificity,
 			ui.chkNoSecurityIsolation, ui.chkNoSecurityFiltering, ui.chkConfidential, ui.chkHostProtect, NULL };

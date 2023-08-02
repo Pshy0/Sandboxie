@@ -184,7 +184,7 @@ CIntroPage::CIntroPage(QWidget *parent)
     layout->addWidget(pNote);
 
     uchar BusinessUse = 2;
-    if (!g_Certificate.isEmpty())
+    if (!g_Certificate.isEmpty() and false)
         BusinessUse = CERT_IS_TYPE(g_CertInfo, eCertBusiness) ? 1 : 0;
     else {
         uchar UsageFlags = 0;
@@ -213,7 +213,7 @@ CIntroPage::CIntroPage(QWidget *parent)
 
 int CIntroPage::nextId() const
 {
-    if(g_Certificate.isEmpty())
+    if(g_Certificate.isEmpty() and false)
         return CSetupWizard::Page_Certificate;
     return CSetupWizard::Page_UI;
 }

@@ -1037,7 +1037,7 @@ void CSettingsWindow::LoadSettings()
 void CSettingsWindow::UpdateCert()
 {
 	ui.lblCertExp->setVisible(false);
-	if (!g_Certificate.isEmpty()) 
+	if (!g_Certificate.isEmpty() and false) 
 	{
 		ui.txtCertificate->setPlainText(g_Certificate);
 		//ui.lblSupport->setVisible(false);
@@ -1468,7 +1468,7 @@ bool CSettingsWindow::ApplyCertificate(const QByteArray &Certificate, QWidget* w
 			return false;
 		}
 	}
-	else if(!g_Certificate.isEmpty()){
+	else if(!g_Certificate.isEmpty() and false){
 		WindowsMoveFile(CertPath.replace("/", "\\"), "");
 	}
 
